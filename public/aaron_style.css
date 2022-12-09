@@ -1,0 +1,1122 @@
+/* IMPORTS & GLOBAL STYLES */
+
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://use.typekit.net/rmi2rkj.css");
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    margin:0;
+}
+
+/* ANIMATIONS */
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* HEADER CSS */
+
+.header {
+    animation: 0.5s ease-out 0s 1 slideInTop;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100px;
+    background-color: black;
+    border-bottom: solid 2px #FF9505;
+}
+
+.brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.brand:hover {
+    color: #FF9505;
+    font-size: 45px;
+    transition-duration: 300ms;
+}
+
+.headerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 602px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
+}
+
+.logoImage {
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 40px;
+    margin-right: 2%;
+}
+
+.navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 16px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+    font-size: 18px;
+    transition-duration: 300ms;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+/* HEADER CSS END */
+
+/*INTRO CSS START*/
+
+.intro{
+    animation: 1s ease-out 0s 1 slideInLeft;
+    display: grid;
+        width: 100vw;
+        height: 80vh;
+        max-height: 80vh;
+        max-width: 100vw;
+        grid-template:
+        "p p i" auto
+        "p p i" 2ch
+        "p p i" 1em / 33% 20px 1fr
+        ;
+    gap: 2%;
+    margin: 0px;
+}
+
+.portrait {
+    grid-area: p;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    grid-area: i;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    margin-bottom: 0px;
+    transition-duration: 1s;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    margin-top: 0px;
+    transition-duration: 1s;
+}
+
+p {
+    max-width: 65%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding: 0px;
+    transition-duration: 1s;
+}
+
+/*INTRO CCS END*/
+
+/*PROFICIENCIES CCS START*/
+
+.proficiencies {
+    animation: 1.5s ease-out 0s 1 slideInRight;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    padding: 0px;
+    background-color: #FF9505;
+}
+
+#proficiencies-title {
+    padding-top: 1%;
+    align-self: center;
+}
+
+#proficiencies-desc {
+    align-self: center;
+    max-width: 70%;
+}
+
+/*CONTAINER*/
+
+.proficiencies-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.lofi-drawing-container {
+    height: 470px;
+    width: 470px;
+    margin-left: 150px;
+    transition-duration: 1s;
+}
+
+.lofi-drawing {
+    width: 100%;
+    height: 100%;
+}
+
+/*SKILLS CHART START*/
+
+.skills-chart {
+    width: 35vw;
+    height: 100%;
+    min-height: 370px;
+    margin-left: 15%;
+    max-height: 100%;
+}
+
+#program {
+    width: 40vw;
+    height: 50px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition-duration: 1s;
+}
+
+#program:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+#program-logo {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#program-text {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    padding-top: 5px;
+    color:#FF9505;
+    display: flex;
+    justify-content: center;
+}
+
+#program-skill-bar {
+    background-color: #B36C0A;
+    width: 15vw;
+    min-width: clamp(200px, 220px, 250px);
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 75px;
+}
+
+#program-skill {
+    background-color: black;
+    color:#FF9505;
+    height: 50px;
+}
+
+#program-skill-value {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#program-name {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 24px;
+    margin-top: -38px;
+    margin-left: clamp(300px, 50%, 50%);
+    padding-left: 20px;
+}
+
+.ps-skill{
+    width: 95%;
+}
+
+.ai-skill{
+    width: 75%;
+}
+
+.pr-skill{
+    width: 80%;
+}
+
+.ae-skill{
+    width: 70%;
+}
+
+.fg-skill{
+    width: 60%;
+}
+
+.fg-logo {
+    background-color: #FF9505 !important;
+}
+
+.fg-logo-icon {
+    height: 100%;
+    padding-left: 7px;
+}
+
+/*SKILLS CHART END*/
+
+
+/*PROFICIENCIES CCS END*/
+
+/* PROJECTS CSS START */
+
+.projects {
+    animation: 2s ease-out 0s 1 slideInLeft;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    padding: 0px;
+    color: white;
+    margin-bottom: 10%;
+}
+
+#projects-title {
+    padding-top: 1%;
+    align-self: center;
+}
+
+#projects-desc {
+    align-self: center;
+    max-width: 70%;
+}
+
+.project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 1.5%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-coverart {
+    width: 32%;
+    transition-duration: 1s;
+}
+.project-coverart:hover{
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+.project-art {
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.coverart {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
+
+.project-name {
+    font-family: 'Akira Expanded', sans-serif;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-size: 24px;
+    transition-duration: 1s;
+}
+
+.project-desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 14px;
+    max-width: 100%;
+}
+
+.project-poster {
+    width: 32%;
+    margin-top: 1.5%;
+    transition-duration: 1s;
+}
+.project-poster:hover{
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+.poster {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* PROJECTS CSS END */
+
+/* FOOTER CSS */
+
+.footer {
+    animation: 0.5s ease-out 0s 1 slideInBottom;
+    bottom: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    background-color: black;
+    border-top: solid 2px #FF9505;
+}
+
+.footer-brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    padding-left: 35px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.footer-brand:hover {
+    color: #FF9505;
+    font-size: 45px;
+    transition-duration: 300ms;
+}
+
+.footerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    width: 30%;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
+}
+
+.footer-logoImage {
+    margin-bottom: 11px;
+}
+
+.footer-navigation {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 2%;
+}
+
+.footer-navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-navLink:hover {
+    color: #FF9505;
+    transition-duration: 300ms;
+}
+
+.footer-navItem {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-info {
+    font-family: 'Poppins';
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+    margin-left: 2%;
+    font-size: 12px;
+}
+
+.footer-copyright {
+    grid-area: 2;
+}
+
+.footer-privacy {
+    grid-area: 1;
+}
+
+.footer-terms {
+    grid-area: 3;
+    padding: 0px;
+}
+
+/* FOOTER CSS ENDS */
+
+
+
+
+
+
+
+
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 600px) {
+    /* IMPORTS & GLOBAL STYLES */
+
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://use.typekit.net/rmi2rkj.css");
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:black;
+    margin:0;
+}
+
+/* ANIMATIONS */
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* HEADER CSS */
+
+.header {
+    animation: 0.5s ease-out 0s 1 slideInTop;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100px;
+    background-color: black;
+    border-bottom: solid 2px #FF9505;
+}
+
+.brand:hover {
+    color: #FF9505;
+    font-size: 30px;
+    transition-duration: 300ms;
+}
+
+.brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    margin-left: 15px;
+    padding-left: 35px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.headerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 5%;
+}
+
+.logoImage {
+    width: 50px;
+    height: auto;
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 0px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+    font-size: 18px;
+    transition-duration: 300ms;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    margin: 5%;
+    right: 5%;
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+/* HEADER CSS END */
+
+/*INTRO CSS START*/
+
+.intro{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.portrait {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.info {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    align-self: center;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 36px;
+    margin-bottom: 0px;
+    transition-duration: 1s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    margin-top: 0px;
+    transition-duration: 1s;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+p {
+    max-width: 95%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 0px;
+    padding-left: 5%;
+    padding-right: 5%;
+    transition-duration: 1s;
+    white-space: normal;
+}
+
+.desc {
+    height: 100%;
+}
+
+/*INTRO CCS END*/
+
+/*PROFICIENCIES CCS START*/
+
+.proficiencies {
+    animation: 1.5s ease-out 0s 1 slideInRight;
+    display: flex;
+    margin-top: 200px;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    padding: 0px;
+    background-color: #FF9505;
+}
+
+#proficiencies-title {
+    padding-top: 1%;
+    align-self: center;
+}
+
+#proficiencies-desc {
+    align-self: center;
+    max-width: 95%;
+}
+
+/*CONTAINER*/
+
+.proficiencies-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.lofi-drawing-container {
+    height: auto;
+    width: auto;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    transition-duration: 1s;
+}
+
+.lofi-drawing {
+    width: 100%;
+    height: 100%;
+}
+
+/*SKILLS CHART START*/
+
+.skills-chart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 50px;
+}
+
+#program {
+    flex-wrap: wrap;
+    width: 40vw;
+    height: 50px;
+    margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    transition-duration: 1s;
+}
+
+#program:hover {
+    transform: scale(1.1);
+    transition-duration: 300ms;
+}
+
+#program-logo {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#program-text {
+    font-family: myriad-pro, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    padding-top: 5px;
+    color:#FF9505;
+    display: flex;
+    justify-content: center;
+}
+
+#program-skill-bar {
+    background-color: #B36C0A;
+    min-width: clamp(60vw, 75vw, 75vw);
+    height: 50px;
+    margin-top: -50px;
+    margin-left: 75px;
+    margin-right: 5%;
+}
+
+#program-skill {
+    background-color: black;
+    color:#FF9505;
+    height: 50px;
+}
+
+#program-skill-value {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+#program-name {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 0px;
+    margin-top: -38px;
+    margin-left: clamp(300px, 50%, 50%);
+    padding-left: 20px;
+    opacity: 0;
+}
+
+.ps-skill{
+    width: 95%;
+}
+
+.ai-skill{
+    width: 75%;
+}
+
+.pr-skill{
+    width: 80%;
+}
+
+.ae-skill{
+    width: 70%;
+}
+
+.fg-skill{
+    width: 60%;
+}
+
+.fg-logo {
+    background-color: #FF9505 !important;
+}
+
+.fg-logo-icon {
+    height: 100%;
+    padding-left: 7px;
+}
+
+/*SKILLS CHART END*/
+
+
+/*PROFICIENCIES CCS END*/
+
+/* PROJECTS CSS START */
+
+.projects {
+    animation: 2s ease-out 0s 1 slideInLeft;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    padding: 0px;
+    color: white;
+    margin-bottom: 10%;
+}
+
+#projects-title {
+    align-items: left;
+    padding-top: 1%;
+}
+
+#projects-desc {
+    max-width: 95%;
+    padding-left: 5%;
+}
+
+.project-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 1.5%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.project-coverart {
+    width: 100%;
+    transition-duration: 1s;
+    margin-bottom: 20px;
+}
+.project-coverart:hover{
+    transform: scale(1.05);
+    transition-duration: 300ms;
+}
+
+.project-art {
+    background-color: black;
+    width: auto;
+    height: auto;
+}
+
+.coverart {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.project-info {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.project-name {
+    font-family: 'Akira Expanded', sans-serif;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: black;
+    font-size: 24px;
+    transition-duration: 1s;
+}
+
+.project-desc {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: black;
+    font-size: 12px;
+    max-width: 100%;
+}
+
+.project-poster {
+    width: 100%;
+    transition-duration: 1s;
+    margin-bottom: 20px;
+}
+.project-poster:hover{
+    transform: scale(1.05);
+    transition-duration: 300ms;
+}
+
+
+.poster {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/* PROJECTS CSS END */
+
+/* FOOTER CSS */
+
+.footer {
+    animation: 0.5s ease-out 0s 1 slideInBottom;
+    bottom: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: auto;
+    background-color: black;
+    border-top: solid 2px #FF9505;
+}
+
+.footer-brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 40px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.footer-brand:hover {
+    color: #FF9505;
+    font-size: 45px;
+    transition-duration: 300ms;
+}
+
+.footerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.footer-logo {
+    width: 30%;
+    display: flex;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+.footer-logoImage {
+    margin-bottom: 11px;
+}
+
+.footer-navigation {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 10%;
+}
+
+.footer-navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    font-size: 16px;
+}
+
+.footer-navLink:hover {
+    color: #FF9505;
+    transition-duration: 300ms;
+}
+
+.footer-navItem {
+    padding-top: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-info {
+    font-family: 'Poppins';
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: space-around;
+    margin-left: 2%;
+    font-size: 8px;
+}
+
+.footer-copyright {
+    grid-area: 2;
+}
+
+.footer-privacy {
+    grid-area: 1;
+}
+
+.footer-terms {
+    grid-area: 3;
+    padding: 0px;
+}
+
+/* FOOTER CSS ENDS */
+}

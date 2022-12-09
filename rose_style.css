@@ -1,0 +1,496 @@
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://use.typekit.net/rmi2rkj.css");
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin: 0;
+}
+
+/* ANIMATIONS */
+
+@keyframes slideInTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+/* HEADER CSS */
+
+.header {
+    animation: 0.5s ease-out 0s 1 slideInTop;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    width: 100vw;
+    max-width: 100vw;
+    height: 100px;
+    background-color: black;
+    border-bottom: solid 2px #FF9505;
+}
+
+.brand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 18px;
+    padding-left: 35px;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+}
+
+.brand:hover {
+    color: #FF9505;
+    font-size: 45px;
+    transition-duration: 300ms;
+}
+
+.headerContent {
+    width: 100vw;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 602px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 2%;
+}
+
+.logoImage {
+    margin-bottom: 11px;
+}
+
+.navigation {
+    width: 1126px;
+    height: 106px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    gap: 40px;
+    margin-right: 2%;
+}
+
+.navLink {
+    font-family: 'Akira Expanded', sans-serif;
+    -webkit-transition: color 0.3s, font-size 0.3s;
+    transition: color 0.3s, font-size 0.3s;
+    font-size: 16px;
+}
+
+.navLink:hover {
+    color: #FF9505;
+    font-size: 18px;
+    transition-duration: 300ms;
+}
+
+.navItem {
+    margin-bottom: 32px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+/* HEADER CSS END */
+/* Rose Profile Pic + Education CSS */
+
+.profilePic {
+    position: absolute;
+    object-position: 100% 0;
+    max-width: 50%;
+    width: 50%;
+    height: 900px;
+    max-height: 900px;
+    object-fit: contain;
+    right: 45%;
+}
+
+.fullName {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 22%;
+}
+
+.fullName h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 80px;
+    -webkit-text-stroke: 1px white;
+    text-align: end;
+}
+
+.profileInfo {
+    display: flex;
+    position: relative;
+    margin-top: -5%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    top: 50px;
+    width: 50%;
+    left: 40%;
+}
+
+.filledName {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 60px;
+    color: white;
+}
+
+.profileQualities {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 15%;
+    width: 30%;
+    left: 60%;
+}
+
+.profileQualities h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: end;
+}
+
+/* PROFILE + EDUCATION END */
+
+/* WORKS SECTION */
+
+.workDivider {
+    width: 100vw;
+    max-width: 100vw;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+}
+
+.workExample1 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    left: 15%;
+    top: 145%;
+}
+
+.workExample1 h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: #FF9505;
+    font-size: 50px;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+.workExample1 h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+.workExample1 img {
+    position: relative;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    bottom: 300px;
+    left: 170%;
+}
+
+.workExample2 {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    left: 15%;
+    top: 200%;
+}
+
+.workExample2 h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: #FF9505;
+    font-size: 50px;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+.workExample2 h3 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: start;
+    word-wrap: break-word;
+}
+
+.workExample2 img {
+    display: flex;
+    position: relative;
+    width: 300px;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    bottom: 300px;
+    left: 170%;
+}
+
+.filmInfo {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    width: 40%;
+    left: 16%;
+    top: 115%;
+}
+
+.filmInfo h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    color: white;
+    font-size: 70px;
+    text-align: start;
+}
+
+.filmPhotos {
+    display: flex;
+    width: 500px;
+    max-width: 500px;
+    height: 400px;
+    max-height: 400px;
+}
+
+.filmPhotos img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+    object-position: 100% 0;
+}
+
+.one {
+    position: relative;
+    left: 118%;
+    bottom: 109%;
+}
+
+.one:hover {
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
+.two {
+    position: relative;
+    left: 18%;
+    top: -5%;
+}
+
+.two:hover {
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
+.three {
+    position: relative;
+    right: 200%;
+    top: -5%;
+}
+
+.three:hover {
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
+/* WORKS END */
+
+/* HOBBIES START */
+
+.hobbiesDivider {
+    width: 100vw;
+    max-width: 100vw;
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 30px;
+    -webkit-text-stroke: 1px white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    top: 770%;
+}
+
+.mediaInfo {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    left: 35%;
+    top: 300%;
+}
+
+.mediaInfo h1 {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 80px;
+    color: white;
+}
+
+.mediaInfo h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.items {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 80px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    top: 110%;
+}
+
+.hobbiesPosters img {
+    width: 100%;
+    max-width: 100%;
+    height: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.hobbiesPosters:hover {
+    transition: 400ms ease-in-out;
+    transform: scale(1.05);
+}
+
+/* HOBBIES END */
+
+/* FOOTER */
+.footer {
+    position: relative;
+    top:990%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+    border-top: solid 2px #FF9505;
+}
+
+.footerContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: left;
+    margin-left: 5%;
+    padding-top: 1%;
+}
+
+.footerBrand {
+    font-family: 'Akira Expanded', sans-serif;
+    font-size: 40px;
+    color: white;
+    padding: 0% 5% 0% 2%;
+    margin-left: 10%;
+}
+
+.footerBrand:hover {
+    color: #FF9505;
+}
+
+.copyright{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+}
+
+.links{
+    display: flex;
+    padding-left: 10%;
+    gap: 10%;
+    width: 50%;
+}
+
+.footLink {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footLink:hover {
+    color: #FF9505;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.policies{
+    font-family: 'Poppins';
+    font-size: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding-left: 4%;
+}
